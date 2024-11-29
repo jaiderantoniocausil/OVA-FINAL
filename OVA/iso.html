@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre ISO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: url('https://hdqwalls.com/wallpapers/mountains-clouds-lake-reflection-sun-sky-6o.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 100px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        main {
+            width: 90%;
+            max-width: 900px;
+            margin-top: 150px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease;
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            color: #5e2a84;
+            margin-bottom: 20px;
+            font-family: 'Lora', serif;
+        }
+
+        section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        .iso-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-top: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #5e2a84;
+            color: white;
+            border-radius: 5px;
+            font-size: 1.1em;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #4b1a66;
+        }
+
+        footer {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        a {
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ISO en Fotografía</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>¿Qué es el ISO en Fotografía?</h2>
+            <p>
+                El ISO en fotografía se refiere a la sensibilidad del sensor de la cámara a la luz. Cuanto mayor es el número ISO, más sensible es el sensor, lo que te permite tomar fotos con menos luz. Sin embargo, aumentar el ISO también puede generar más ruido en la imagen.
+            </p>
+        </section>
+
+        <section>
+            <h2>¿Cómo afecta el ISO a las fotos?</h2>
+            <p>
+                Incrementar el ISO permite capturar imágenes en condiciones de poca luz sin necesidad de un trípode o flash, pero puede introducir "ruido" en las imágenes, lo que reduce la calidad. Es importante equilibrar el ISO con la velocidad de obturación y la apertura para obtener la mejor exposición.
+            </p>
+        </section>
+
+        <section>
+            <p>
+                Es recomendable usar un ISO bajo (100 o 200) en condiciones de buena luz para mantener la calidad de la imagen y evitar ruido. Sin embargo, en ambientes oscuros, cuando no se puede aumentar la apertura ni la velocidad de obturación, aumentar el ISO puede ser una solución para obtener una exposición correcta.
+            </p>
+        </section>
+
+        <section>
+            <img class="iso-image" src="https://upload.wikimedia.org/wikipedia/commons/3/32/ISO_Sensitivity_chart.svg" alt="Gráfico sobre ISO en fotografía">
+            <p>Este gráfico muestra cómo la sensibilidad ISO afecta la exposición de las imágenes. A medida que el ISO aumenta, la sensibilidad a la luz mejora, pero también lo hace el ruido en las imágenes.</p>
+        </section>
+
+        <section>
+            <h3>Video explicativo sobre ISO</h3>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xmrmcCnoeiw?si=bABkQPvWHbJ8oMMm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+            </iframe>
+            <p>Este video te ayudará a comprender cómo manejar el ISO en diferentes condiciones de luz.</p>
+        </section> <a href="index.html">Volver al inicio</a>
+    </main>
+
+    <footer>
+        <p>Autores: Jaider Carrascal, Vanessa Gulfo, Alejandra Agamez, Luis Noriega</p>
+    </footer>
+
+</body>
+
+</html>

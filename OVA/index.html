@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triángulo de Exposición</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            background: url('https://images.unsplash.com/photo-1577243856512-7b2de232cc30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjk3OHwwfDF8c2VhY3J8MXx8ZnVsbCUyMGZpbG0lMjBsaWdodCUyMGNlbnRlcnxlbnwwfHx8fDE2NzgwNTc2Njk&ixlib=rb-4.0.3&q=80&w=1920') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        nav {
+            width: 250px;
+            background-color: #351342;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: fixed;
+            height: 100%;
+            top: 0;
+            left: -250px;
+            transition: left 0.3s ease-in-out;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            background-color: #8a57cc;
+            transition: background-color 0.3s;
+        }
+
+        nav a i {
+            margin-right: 10px;
+        }
+
+        nav a:hover {
+            background-color: #5b4179;
+        }
+
+        .toggle-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #8a57cc;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            z-index: 1001; 
+        }
+
+        .toggle-btn:hover {
+            background-color: #5b4179;
+        }
+
+        iframe {
+            flex-grow: 1;
+            border: none;
+            width: 100%;
+            height: 100%;
+            transition: margin-left 0.3s ease-in-out;
+            margin-left: 0;
+        }
+
+        .open-nav {
+            left: 0;
+        }
+
+        iframe.open-nav-iframe {
+            margin-left: 250px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <button class="toggle-btn" onclick="toggleMenu()">☰ Menú</button>
+    <nav id="navMenu">
+        <h2>Menú</h2>
+        <a href="contenido.html" target="iframe"><i class="fas fa-book"></i> Contenido</a>
+        <a href="actividades.html" target="iframe"><i class="fas fa-tasks"></i> Actividades</a>
+        <a href="evaluacion.html" target="iframe"><i class="fas fa-check-circle"></i> Evaluación</a>
+        <a href="recursos.html" target="iframe"><i class="fas fa-folder"></i> Recursos</a>
+    </nav>
+
+    <iframe name="iframe" src="contenido.html"></iframe>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navMenu');
+            const iframe = document.querySelector('iframe');
+
+            
+            nav.classList.toggle('open-nav');
+            iframe.classList.toggle('open-nav-iframe');
+        }
+    </script>
+</body>
+
+</html>
+

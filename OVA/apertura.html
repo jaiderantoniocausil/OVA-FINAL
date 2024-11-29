@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre Apertura del Diafragma</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        
+        body {
+            background: url('https://media.macphun.com/img/uploads/uploads/skylum/l/2SarahLyndsay-min.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            color: #010000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 100px;
+        }
+
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro transparente */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        
+        main {
+            width: 90%;
+            max-width: 900px;
+            margin-top: 150px;
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease;
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            color: #5e2a84;
+            margin-bottom: 20px;
+            font-family: 'Lora', serif;
+        }
+
+        section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #5e2a84;
+            color: white;
+            border-radius: 5px;
+            font-size: 1.1em;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #4b1a66;
+        }
+
+        
+        footer {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        
+        a {
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Apertura del Diafragma</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>¿Qué es la apertura del diafragma?</h2>
+            <p>La apertura se refiere al tamaño de la abertura del diafragma en el lente de la cámara. Esta abertura controla cuánta luz entra en la cámara y, por lo tanto, influye directamente en la exposición de la imagen. Se mide en f-stops, como f/2.8, f/4, f/8, etc. Cuanto menor sea el número f (por ejemplo, f/2.8), mayor será la apertura y, por lo tanto, más luz entrará en la cámara.</p>
+
+            <p>Una gran apertura (número f pequeño, como f/1.4 o f/2.8) permite una mayor entrada de luz, lo que es ideal en condiciones de poca luz. También crea un efecto conocido como "bokeh", que es el desenfoque agradable del fondo, lo que hace que el sujeto principal resalte y quede más nítido. Este es un efecto muy utilizado en retratos.</p>
+
+            <p>Por otro lado, una pequeña apertura (número f grande, como f/16 o f/22) reduce la cantidad de luz que entra en la cámara, pero aumenta la profundidad de campo. Esto significa que más elementos en la escena estarán enfocados, lo que es útil cuando se fotografía paisajes o escenas donde deseas que tanto el primer plano como el fondo estén nítidos.</p>
+
+            <p>El equilibrio entre la apertura, la velocidad de obturación y el ISO es fundamental para lograr una exposición correcta. Si aumentas la apertura (f/1.4), necesitarás una velocidad de obturación más rápida para evitar una sobreexposición. Si reduces la apertura (f/16), necesitarás una velocidad de obturación más lenta para obtener la cantidad correcta de luz.</p>
+        </section>
+
+        <section>
+            <h2>Video Explicativo sobre Apertura del Diafragma</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/--uvNkDIasE?si=6URyFXLTn-MM4pYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <a href="index.html">Volver al Inicio</a>
+    </main>
+
+    <footer>
+        <p>Autores: Jaider Carrascal, Vanessa Gulfo, Alejandra Agamez, Luis Noriega</p>
+    </footer>
+
+</body>
+
+</html>

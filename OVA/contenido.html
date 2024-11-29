@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triángulo de Exposición en Fotografía</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: url('https://i.pinimg.com/originals/43/46/6d/43466d1a64791542c76f315fd9cf11f1.jpg') no-repeat center center fixed; 
+            background-color: #f0f2f5;
+            color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 80px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #351342;
+            color: white;
+            padding: 1.2em;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            margin-bottom: 0.2em;
+        }
+
+        header p {
+            font-size: 1em;
+            color: #d4d9df;
+            margin-bottom: 1em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            padding: 0.6em 1em;
+            background-color: #8a57cc;
+            border-radius: 25px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #5b4179;
+        }
+
+        main {
+            max-width: 900px;
+            padding: 2em;
+            width: 100%;
+        }
+
+        .content-placeholder {
+            background-color: #e8eaf0;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
+            padding: 2em;
+            text-align: center;
+            font-size: 1.2em;
+            color: #000000;
+        }
+
+        .content-placeholder p {
+            margin-bottom: 1.5em;
+            font-style: italic;
+        }
+
+        .btn-mas-info {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .btn-mas-info:hover {
+            background-color: #5a1780;
+        }
+
+        footer {
+            padding: 1em;
+            text-align: center;
+            font-size: 0.9em;
+            color: #ffffff;
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Triángulo de Exposición en Fotografía</h1>
+        <p>Comprende los elementos clave para una exposición perfecta: ISO, Velocidad de Obturación y Apertura.</p>
+        <nav>
+            <a href="#iso">ISO</a>
+            <a href="#obturacion">Velocidad de Obturación</a>
+            <a href="#apertura">Apertura</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="iso" class="content-placeholder">
+            <h2>ISO</h2>
+            <p>Explora la sensibilidad de la cámara a la luz y cómo afecta la claridad de tus fotos.</p>
+            <a href="iso.html" class="btn-mas-info">Más Info</a>
+        </section>
+
+        <section id="obturacion" class="content-placeholder">
+            <h2>Velocidad de Obturación</h2>
+            <p>Descubre cómo controlar el movimiento en tus fotos mediante la velocidad de obturación.</p>
+            <a href="obturacion.html" class="btn-mas-info">Más Info</a>
+        </section>
+
+        <section id="apertura" class="content-placeholder">
+            <h2>Apertura</h2>
+            <p>Aprende a manipular la profundidad de campo y el enfoque en tus capturas.</p>
+            <a href="apertura.html" class="btn-mas-info">Más Info</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Autores: Jaider Carrascal, Vanessa Gulfo, Alejandra Agamez, Luis Noriega</p>
+    </footer>
+</body>
+</html>

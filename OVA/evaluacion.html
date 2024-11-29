@@ -1,0 +1,204 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación - Triángulo de Exposición</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://hdqwalls.com/wallpapers/mountains-clouds-lake-reflection-sun-sky-6o.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 100px; /* Ajuste para que el contenido se vea correctamente */
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h2 {
+            color: #000000;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .quiz-container {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            height: auto;
+            box-sizing: border-box;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .options label {
+            display: block;
+            margin: 8px 0;
+            padding: 10px;
+            background-color: #8a57cc;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .options label:hover {
+            background-color: #5b4179;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #8a57cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover {
+            background-color: #5b4179;
+        }
+
+        .result {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 30px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .result.pass {
+            color: green;
+        }
+
+        .result.fail {
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Evaluación - Triángulo de Exposición</h2>
+
+    <div class="quiz-container">
+        <form id="quizForm">
+            <div class="question">
+                <p>1. ¿Qué tres elementos conforman el Triángulo de Exposición en fotografía?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="A"> A) Apertura, Velocidad de obturación, ISO</label>
+                    <label><input type="radio" name="q1" value="B"> B) Apertura, Saturación, Contraste</label>
+                    <label><input type="radio" name="q1" value="C"> C) ISO, Contraste, Balance de blancos</label>
+                    <label><input type="radio" name="q1" value="D"> D) Velocidad de obturación, ISO, Brillo</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>2. ¿Qué sucede cuando se aumenta la apertura del diafragma (menor número f)?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="A"> A) Se reduce la cantidad de luz que entra</label>
+                    <label><input type="radio" name="q2" value="B"> B) Se aumenta la profundidad de campo</label>
+                    <label><input type="radio" name="q2" value="C"> C) Se aumenta la cantidad de luz que entra</label>
+                    <label><input type="radio" name="q2" value="D"> D) No tiene efecto en la cantidad de luz</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>3. ¿Qué función tiene la velocidad de obturación en una fotografía?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="A"> A) Controla la cantidad de luz que entra al sensor</label>
+                    <label><input type="radio" name="q3" value="B"> B) Controla el movimiento y el desenfoque</label>
+                    <label><input type="radio" name="q3" value="C"> C) Ajusta el color de la imagen</label>
+                    <label><input type="radio" name="q3" value="D"> D) Determina la cantidad de enfoque de la imagen</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>4. ¿Cómo afecta un ISO más alto a la imagen?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="A"> A) Aumenta la luminosidad y reduce el ruido</label>
+                    <label><input type="radio" name="q4" value="B"> B) Aumenta la luminosidad y puede introducir ruido</label>
+                    <label><input type="radio" name="q4" value="C"> C) No afecta a la luminosidad pero mejora la calidad</label>
+                    <label><input type="radio" name="q4" value="D"> D) Disminuye el contraste y la saturación</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>5. Si quieres que tu imagen tenga un fondo más difuso, ¿qué deberías hacer con la apertura del diafragma?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="A"> A) Usar una apertura más pequeña (número f más grande)</label>
+                    <label><input type="radio" name="q5" value="B"> B) Usar una apertura más grande (número f más pequeño)</label>
+                    <label><input type="radio" name="q5" value="C"> C) Cambiar la velocidad de obturación</label>
+                    <label><input type="radio" name="q5" value="D"> D) Aumentar el ISO</label>
+                </div>
+            </div>
+
+            <button type="button" class="submit-btn" onclick="submitQuiz()">Enviar respuestas</button>
+        </form>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            var score = 0;
+            var resultText = "";
+            var answers = {
+                q1: "A", // Respuesta correcta: A
+                q2: "C", // Respuesta correcta: C
+                q3: "B", // Respuesta correcta: B
+                q4: "B", // Respuesta correcta: B
+                q5: "B"  // Respuesta correcta: B
+            };
+
+            // Verificar respuestas
+            for (var question in answers) {
+                var selectedAnswer = document.querySelector('input[name="' + question + '"]:checked');
+                if (selectedAnswer && selectedAnswer.value === answers[question]) {
+                    score++;
+                }
+            }
+
+            // Mostrar resultados
+            if (score >= 3) {
+                resultText = "¡Aprobaste! Tu puntuación es: " + score + "/5";
+                document.getElementById("result").classList.add("pass");
+                document.getElementById("result").classList.remove("fail");
+            } else {
+                resultText = "No aprobaste. Tu puntuación es: " + score + "/5";
+                document.getElementById("result").classList.add("fail");
+                document.getElementById("result").classList.remove("pass");
+            }
+
+            document.getElementById("result").innerHTML = resultText;
+        }
+    </script>
+
+</body>
+
+</html>
